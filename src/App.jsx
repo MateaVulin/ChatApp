@@ -218,6 +218,7 @@ class App extends Component {
           messages={this.state.messages}
           currentMember={this.state.member}
         />
+        <Input onSendMessage={this.onSendMessage} />
       </div>
     );
   }
