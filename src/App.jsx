@@ -149,9 +149,6 @@ function randomColor() {
 class App extends Component {
   constructor() {
     super();
-    // this.drone = new window.Scaledrone("YOUR-CHANNEL-ID", {
-    //   data: this.state.member
-    // });
     this.drone = new window.Scaledrone("qvMvGLfWONMhcKeX", {
       data: this.state.member,
     });
@@ -171,22 +168,6 @@ class App extends Component {
     });
   }
 
-  // state = {
-  //   messages: [
-  //     {
-  //       text: "This is a test message!",
-  //       member: {
-  //         color: "blue",
-  //         username: "bluemoon"
-  //       }
-  //     }
-  //   ],
-  //   member: {
-  //     username: randomName(),
-  //     color: randomColor()
-  //   }
-  // }
-
   state = {
     messages: [],
     member: {
@@ -194,15 +175,6 @@ class App extends Component {
       color: randomColor(),
     },
   };
-
-  // onSendMessage = (message) => {
-  //   const messages = this.state.messages
-  //   messages.push({
-  //     text: message,
-  //     member: this.state.member
-  //   })
-  //   this.setState({messages: messages})
-  // }
 
   onSendMessage = (message) => {
     this.drone.publish({
