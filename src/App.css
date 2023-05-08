@@ -63,13 +63,13 @@
   max-width: 400px;
   margin: 0;
   border-radius: 12px;
-  background-color: cornflowerblue;
+  background-color: rgb(235, 100, 237);
   color: white;
   display: inline-block;
 }
 
 .currentMember>.Message-content .text {
-  background-color: orangered;
+  background-color: plum;
 }
 
 form {
@@ -84,14 +84,14 @@ input {
   padding: 5px;
   font-size: 16px;
   border-radius: 8px;
-  border: 1px solid orangered;
+  border: 1px solid lavender;
   flex-grow: 1;
 }
 
 button {
   padding: 5px 10px;
   font-size: 16px;
-  background-color: orangered;
+  background-color: purple;
   color: white;
   border: none;
   border-radius: 8px;
