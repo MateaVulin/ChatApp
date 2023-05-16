@@ -9,7 +9,7 @@ class Messages extends Component {
       ? "Messages-message currentMember"
       : "Messages-message";
     return (
-      <li key={message.id} className={className}>
+      <li className={className}>
         <span
           className="avatar"
           style={{ backgroundColor: member.clientData.color }}

@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 
 class Input extends Component {
-  state = {
-    text: "",
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      text: "",
+    };
+  }
 
   handleChange = (e) => {
     this.setState({ text: e.target.value });
@@ -11,23 +14,20 @@ class Input extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    const { text } = this.state;
     this.setState({ text: "" });
-    this.props.onSendMessage(text);
+    this.props.onSendMessage(this.state.text);
   };
 
   render() {
-    const { text } = this.state;
-
     return (
       <div className="Input">
         <form onSubmit={this.handleSubmit}>
           <input
             onChange={this.handleChange}
-            value={text}
+            value={this.state.text}
             type="text"
-            placeholder="Tell me about your day..."
-            autoFocus
+            placeholder="Talk to me ..."
+            autoFocus={true}
           />
           <button>Send</button>
         </form>
