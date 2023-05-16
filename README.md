@@ -2,9 +2,8 @@
 I made this project as a final paper on the front end developer course
 
 <b> <i>Technologies </i></b> <br>
-I made this project in Visual Studio Code.I also used :
-- React 18.2.0
-- Scaledrone
+Technologies i used for making this project : Visual Studio Code, 
+ React 18.2.0,Scaledrone
 
 <b> <i> Connecting to Scaledrone </i></b>
 
