@@ -7,7 +7,7 @@ class Input extends Component {
       text: "",
     };
   }
-
+  
   handleChange = (e) => {
     this.setState({ text: e.target.value });
   };
