@@ -1,31 +1,33 @@
-import { Component } from "react";
-import React from "react";
+import React, { Component } from "react";
 
 class Input extends Component {
-  state = {
-    text: "",
-  };
-
-  onChange(e) {
-    this.setState({ text: e.target.value });
+  constructor(props) {
+    super(props);
+    this.state = {
+      text: "",
+    };
   }
 
-  onSubmit(e) {
+  handleChange = (e) => {
+    this.setState({ text: e.target.value });
+  };
+
+  handleSubmit = (e) => {
     e.preventDefault();
     this.setState({ text: "" });
     this.props.onSendMessage(this.state.text);
-  }
+  };
 
   render() {
     return (
       <div className="Input">
-        <form onSubmit={(e) => this.onSubmit(e)}>
+        <form onSubmit={this.handleSubmit}>
           <input
-            onChange={(e) => this.onChange(e)}
+            onChange={this.handleChange}
             value={this.state.text}
             type="text"
             placeholder="Napiši nešto i klikni pošalji"
-            autofocus="true"
+            autoFocus={true}
           />
           <button>Send</button>
         </form>
