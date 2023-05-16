@@ -26,7 +26,7 @@ class Input extends Component {
             onChange={this.handleChange}
             value={this.state.text}
             type="text"
-            placeholder="Napiši nešto i klikni pošalji"
+            placeholder="Tell me about your day. . ."
             autoFocus={true}
           />
           <button>Send</button>

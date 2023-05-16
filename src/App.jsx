@@ -25,7 +25,7 @@ class App extends Component {
         color: randomColor(),
       },
     };
-    this.drone = new window.Scaledrone("qvMvGLfWONMhcKeX", {
+    this.drone = new window.Scaledrone('CHANNEL ID', {
       data: this.state.member,
     });
     this.drone.on("open", (error) => {

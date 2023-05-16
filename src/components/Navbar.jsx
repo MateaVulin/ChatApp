@@ -18,7 +18,7 @@ function Navbar() {
       <ul className="navbar-title"><h1><i>My first chat app </i> </h1>
         <div className="navbar-item navbar-toggle">
           <button id="dark-mode-toggle" className="dark-mode-button" onClick={handleThemeChange}>
-            Promijeni temu
+            Change the theme
           </button>
         </div>
       </ul>
