@@ -15,7 +15,7 @@ function Navbar() {
 
   return (
     <nav className={`navbar ${theme === 'dark' ? 'dark-mode' : ''}`}>
-      <ul className="navbar-title"><h1><i>My first chat app </i> </h1>
+      <ul className="navbar-title"><h1><i>Matea Chat App </i> </h1>
         <div className="navbar-item navbar-toggle">
           <button id="dark-mode-toggle" className="dark-mode-button" onClick={handleThemeChange}>
             Change the theme
