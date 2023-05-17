@@ -1,8 +1,8 @@
-import { Component } from "react";
+
+import React, { Component } from "react";
 import Messages from "./components/Messages";
 import Input from "./components/Input";
 import Navbar from "./components/Navbar";
-
 import "./App.css";
 
 function randomName() {
@@ -16,9 +16,17 @@ function randomName() {
 function randomColor() {
   return "#" + Math.floor(Math.random() * 0xffffff).toString(16);
 }
+
 class App extends Component {
   constructor() {
     super();
+    this.state = {
+      messages: [],
+      member: {
+        username: randomName(),
+        color: randomColor(),
+      },
+    };
     this.drone = new window.Scaledrone("qvMvGLfWONMhcKeX", {
       data: this.state.member,
     });
@@ -32,19 +40,10 @@ class App extends Component {
     });
     const room = this.drone.subscribe("observable-room");
     room.on("data", (data, member) => {
-      const messages = this.state.messages;
-      messages.push({ member, text: data });
+      const messages = [...this.state.messages, { member, text: data }];
       this.setState({ messages });
     });
   }
-
-  state = {
-    messages: [],
-    member: {
-      username: randomName(),
-      color: randomColor(),
-    },
-  };
 
   onSendMessage = (message) => {
     this.drone.publish({
@@ -54,15 +53,13 @@ class App extends Component {
   };
 
   render() {
+    const { messages, member } = this.state;
     return (
       <div className="App">
         <div className="App-header">
-        <Navbar />
-         </div>
-        <Messages
-          messages={this.state.messages}
-          currentMember={this.state.member}
-        />
+          <Navbar />
+        </div>
+        <Messages messages={messages} currentMember={member} />
         <Input onSendMessage={this.onSendMessage} />
       </div>
     );
