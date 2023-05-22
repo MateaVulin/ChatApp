@@ -1,4 +1,4 @@
-<b> <i> ChatApp - Matea V. </i> </b> <br>
+<h1> <i> ChatApp - Matea V. </i> </h1> <br>
 I made this project as a final paper on the front end developer course
 
 <h2> <i>Technologies </i></h2> <br>
