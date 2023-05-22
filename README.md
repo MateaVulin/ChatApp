@@ -25,3 +25,12 @@ Install locally using npm:
 npm and
 npm start
 ```
+<br>
+
+<i>In this app </i>
+<ul>
+ <li> You can change theme (dark/light) </li>
+ <li> Randomly picked names and colors </li>
+ <br>
+ 
+ <i> Picture <i/>
