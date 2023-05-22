@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 class Input extends Component {
   constructor(props) {
@@ -29,7 +31,9 @@ class Input extends Component {
             placeholder="Talk to me ..."
             autoFocus={true}
           />
-          <button>Send</button>
+          <button>
+            <FontAwesomeIcon icon={faPaperPlane} />
+          </button>
         </form>
       </div>
     );
