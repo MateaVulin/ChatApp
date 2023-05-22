@@ -31,6 +31,9 @@ npm start
 <ul>
  <li> You can change theme (dark/light) </li>
  <li> Randomly picked names and colors </li>
+ </ul>
  <br>
  
  <i> Picture <i/>
+![Chat app light](https://github.com/MateaVulin/ChatApp/assets/107482024/5975c068-29cd-4843-b172-a2ad43587380)
+![Chat app ldark](https://github.com/MateaVulin/ChatApp/assets/107482024/9a9b9535-1ac4-4487-8158-5fbfe8c73401)
