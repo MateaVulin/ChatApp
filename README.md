@@ -12,7 +12,7 @@ Technologies i used for making this project : Visual Studio Code,
 - Place the .env file in the main root folder
 <br>
 
-<h2>javascript </h2>
+<h2>Javascript </h2>
 <br>
 /* .env file > Scaledrone Channel ID */
 REACT_APP_SCALEDRONE_CHANNEL_ID = Paste_Channel_ID Here 
