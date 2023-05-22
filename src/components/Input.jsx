@@ -1,43 +1,32 @@
-import React, { Component } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import React, { useState } from "react";
 
-class Input extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      text: "",
-    };
-  }
+const Input = ({ onSendMessage }) => {
+  const [text, setText] = useState("");
 
-  handleChange = (e) => {
-    this.setState({ text: e.target.value });
+  const handleChange = (e) => {
+    setText(e.target.value);
   };
 
-  handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    this.setState({ text: "" });
-    this.props.onSendMessage(this.state.text);
+    setText("");
+    onSendMessage(text);
   };
 
-  render() {
-    return (
-      <div className="Input">
-        <form onSubmit={this.handleSubmit}>
-          <input
-            onChange={this.handleChange}
-            value={this.state.text}
-            type="text"
-            placeholder="Talk to me ..."
-            autoFocus={true}
-          />
-          <button>
-            <FontAwesomeIcon icon={faPaperPlane} />
-          </button>
-        </form>
-      </div>
-    );
-  }
-}
+  return (
+    <div className="Input">
+      <form onSubmit={handleSubmit}>
+        <input
+          onChange={handleChange}
+          value={text}
+          type="text"
+          placeholder="Talk to me ..."
+          autoFocus={true}
+        />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  );
+};
 
 export default Input;
