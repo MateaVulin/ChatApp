@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import "./App.css";
 
 function randomName() {
-  const adjectives = ["živahni", "zalutali", "otvoreni", "napuhani", "putujući", "zalutali", "bijeli", "žuti", "uznemireni"];
+  const adjectives = ["živahni ", "zalutali ", "otvoreni ", "napuhani ", "putujući ", "zalutali ", "bijeli ", "žuti ", "uznemireni "];
   const nouns = ["sunce", "povjetarac", "leptir", "balon", "mjesec", "zvjezdica", "lolipop", "osmijeh", "pogled", "ormar"];
   const adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
   const noun = nouns[Math.floor(Math.random() * nouns.length)];
