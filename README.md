@@ -35,5 +35,6 @@ npm start
  <br>
  
  <i> Picture <i/>
-![Chat app light](https://github.com/MateaVulin/ChatApp/assets/107482024/5975c068-29cd-4843-b172-a2ad43587380)
-![Chat app ldark](https://github.com/MateaVulin/ChatApp/assets/107482024/9a9b9535-1ac4-4487-8158-5fbfe8c73401)
+![dark theme](https://github.com/MateaVulin/ChatApp/assets/107482024/affea320-f3da-451e-acbd-cedc756b6ed9)
+![light theme](https://github.com/MateaVulin/ChatApp/assets/107482024/dce33739-63dc-4789-91a1-5d2fbbc63b89)
+
