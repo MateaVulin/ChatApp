@@ -25,3 +25,16 @@ Install locally using npm:
 npm and
 npm start
 ```
+<br>
+
+<i>In this app </i>
+<ul>
+ <li> You can change theme (dark/light) </li>
+ <li> Randomly picked names and colors </li>
+ </ul>
+ <br>
+ 
+ <i> Picture <i/>
+![dark theme](https://github.com/MateaVulin/ChatApp/assets/107482024/affea320-f3da-451e-acbd-cedc756b6ed9)
+![light theme](https://github.com/MateaVulin/ChatApp/assets/107482024/dce33739-63dc-4789-91a1-5d2fbbc63b89)
+
