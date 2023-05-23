@@ -26,7 +26,7 @@ const Input = ({ onSendMessage }) => {
           onChange={handleChange}
           value={text}
           type="text"
-          placeholder="Talk to me ..."
+          placeholder="Lets Chat ..."
           autoFocus={true}
         />
         <button type="submit">Send</button>

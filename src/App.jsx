@@ -26,7 +26,7 @@ class App extends Component {
         color: randomColor(),
       },
     };
-    const sId = `${process.env.REACT_APP_SCALEDRONE_CHANNEL_ID}`
+    const sId = `${process.env.REACT_APP_CHANNEL_ID}`
 
     this.drone = new window.Scaledrone(sId, {
       data: this.state.member,
