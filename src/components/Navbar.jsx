@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
 function Navbar() {
-  const [theme, setTheme] = useState('light');
+  const [mode, setMode] = useState('light');
 
-  const handleThemeChange = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-    if (newTheme === 'dark') {
+  const handleModeChange = () => {
+    const newMode = mode === 'light' ? 'dark' : 'light';
+    setMode(newMode);
+    if (newMode === 'dark') {
       document.body.classList.add('dark-mode');
     } else {
       document.body.classList.remove('dark-mode');
@@ -14,11 +14,11 @@ function Navbar() {
   };
 
   return (
-    <nav className={`navbar ${theme === 'dark' ? 'dark-mode' : ''}`}>
+    <nav className={`navbar ${mode === 'dark' ? 'dark-mode' : ''}`}>
       <ul className="navbar-title"><h1><i>Matea Chat App </i> </h1>
         <div className="navbar-item navbar-toggle">
-          <button id="dark-mode-toggle" className="dark-mode-button" onClick={handleThemeChange}>
-            Change the theme
+          <button id="dark-mode-toggle" className="dark-mode-button" onClick={handleModeChange}>
+            Change mode
           </button>
         </div>
       </ul>

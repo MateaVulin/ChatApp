@@ -9,6 +9,12 @@ const Input = ({ onSendMessage }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (text.trim() === "") {
+      alert("Prazna poruka se ne može poslati.");
+      return;
+    }
+
     setText("");
     onSendMessage(text);
   };
