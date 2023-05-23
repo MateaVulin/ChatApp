@@ -29,16 +29,11 @@ npm start
 
 <h2><i>In this app </i> </h2>
 <ul>
- <li> You can change theme (dark/light) </li>
+ <li> You can change mode (dark/light) </li>
  <li> Randomly picked names and colors </li>
  </ul>
  <br>
  
 <h2> <i> Picture <i/> </h2>
-![dark theme]
- (https://github.com/MateaVulin/ChatApp/assets/107482024/1e8a90d5-6f67-4e99-be45-06cdc71558a2)
- <br>
- 
-![light theme]
- (https://github.com/MateaVulin/ChatApp/assets/107482024/1385edb7-8bcc-4cc7-bc66-d63cdda48a74)
-
+![lightmode](https://github.com/MateaVulin/ChatApp/assets/107482024/4332d2d5-1416-4260-994c-b3503f7d7e39)
+![darkomode](https://github.com/MateaVulin/ChatApp/assets/107482024/e19d3ed5-5a97-4fbb-9df2-4653932559ff)
