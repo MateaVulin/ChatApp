@@ -11,7 +11,7 @@ const Input = ({ onSendMessage }) => {
     e.preventDefault();
 
     if (text.trim() === "") {
-      alert("Prazna poruka se ne može poslati.");
+      alert("Empty message? Really?");
       return;
     }
 
