@@ -15,13 +15,13 @@ function Navbar() {
 
   return (
     <nav className={`navbar ${mode === 'dark' ? 'dark-mode' : ''}`}>
-      <ul className="navbar-title"><h1><i>Matea Chat App </i> </h1>
+      <div className="navbar-title"><h1><i>Matea Chat App </i> </h1>
         <div className="navbar-item navbar-toggle">
           <button id="dark-mode-toggle" className="dark-mode-button" onClick={handleModeChange}>
             Change mode
           </button>
         </div>
-      </ul>
+      </div>
     </nav>
   );
 }
